@@ -1,0 +1,14 @@
+##
+## Arch Linux repository mirrorlist
+## Generated on 2021-05-26
+##
+
+## India
+Server = http://mirrors.piconets.webwerks.in/archlinux-mirror/$repo/os/$arch
+Server = https://mirrors.piconets.webwerks.in/archlinux-mirror/$repo/os/$arch
+Server = http://mirror.f4st.host/archlinux/$repo/os/$arch
+Server = http://mirror.23media.com/archlinux/$repo/os/$arch
+Server = https://mirror.23media.com/archlinux/$repo/os/$arch
+Server = http://ftp.agdsn.de/pub/mirrors/archlinux/$repo/os/$arch
+Server = https://ftp.agdsn.de/pub/mirrors/archlinux/$repo/os/$arch
+Server = http://mirror.cse.iitk.ac.in/archlinux/$repo/os/$arch

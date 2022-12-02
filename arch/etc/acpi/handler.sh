@@ -72,7 +72,7 @@ case "$1" in
     button/volumedown)
         case "$2" in
             VOLDN)
-                sudo -u pranav XDG_RUNTIME_DIR=/run/user/1000 pactl set-sink-volume 0 -5%
+                sudo -u pranav XDG_RUNTIME_DIR=/run/user/1000 pactl set-sink-volume @DEFAULT_SINK@ -5%
                 ;;
             *)
                 logger "ACPI action undefined: $2"
@@ -82,7 +82,7 @@ case "$1" in
     button/volumeup)
         case "$2" in
             VOLUP)
-                sudo -u pranav XDG_RUNTIME_DIR=/run/user/1000 pactl set-sink-volume 0 +5%
+                sudo -u pranav XDG_RUNTIME_DIR=/run/user/1000 pactl set-sink-volume @DEFAULT_SINK@ +5%
                 ;;
             *)
                 logger "ACPI action undefined: $2"
@@ -92,7 +92,7 @@ case "$1" in
     button/mute)
         case "$2" in
             MUTE)
-                sudo -u pranav XDG_RUNTIME_DIR=/run/user/1000 pactl set-sink-mute 0 toggle
+                sudo -u pranav XDG_RUNTIME_DIR=/run/user/1000 pactl set-sink-mute @DEFAULT_SINK@ toggle
                 ;;
             *)
                 logger "ACPI action undefined: $2"
